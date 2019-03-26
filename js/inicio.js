@@ -1,4 +1,5 @@
 var msgPiezas = document.getElementById("mensajepiezas");
+
 var msgTiempo = document.getElementById("mensajetiempo");
 
 var imagen;
