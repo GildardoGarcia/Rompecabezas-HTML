@@ -1,11 +1,12 @@
-var imagen;
-var piezas;
-var valores;
+var imagen="chikorita";
+var piezas="9";
+var valores = "chikorita,9";
+setCSS();
 
 
 function chikorita(){
     imagen="chikorita";
-
+    
     if(document.getElementById("NumPiezas").checked){
         piezas="9";
         valores = imagen + "," + piezas;
@@ -15,8 +16,15 @@ function chikorita(){
         piezas="16";
         valores = imagen + "," + piezas;
     } 
+    setCSS();
 }
+function setCSS(){
+    document.getElementById("chikorita").classList="";
+    document.getElementById("totodile").classList="";
+    document.getElementById("cyndaquil").classList="";
+    document.getElementById(imagen).classList="selected";
 
+}
 function totodile(){
     imagen="totodile";
 
@@ -29,6 +37,7 @@ function totodile(){
         piezas="16";
         valores = imagen + "," + piezas;
     }
+    setCSS();
 }
 
 function cyndaquil(){
@@ -43,6 +52,7 @@ function cyndaquil(){
         piezas="16";
         valores = imagen + "," + piezas;
     }
+    setCSS();
 }
 
 function enviarInfo(){
