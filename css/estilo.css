@@ -1,0 +1,103 @@
+:root{
+    --limit-background-color: lightslategray;
+}
+
+body{
+    background-color:turquoise;
+}
+
+.contenedor{
+    font-family: 'Concert One', cursive;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    font-family: 'Fredericka the Great', cursive;
+    text-align: center;
+}
+
+nav{
+    background-color: var(--limit-background-color);
+    width: 100%;
+    height: 30px;
+    text-align: right;  
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.specs{
+    width: 70%;
+    float: left;
+    margin:15px;
+}
+
+.imagen{
+    width: 70%;
+    float: left;
+}
+
+.iniciar{
+    margin: 15px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+
+#imagenBase{
+    display: block;
+    margin: auto;
+    border: 5px solid;
+}
+
+.info{
+    background-color: salmon;
+    text-align: justify;
+    width: 25%;
+    height: 100%;
+    margin: 10px;
+    padding: 5px;
+    border: 5px dotted black;
+    float: right;
+}
+
+
+
+.tiempo{
+    display: inline-block;
+}
+
+.piezas{
+
+}
+
+.imagen-selector{
+
+}
+
+footer{
+    background-color: var(--limit-background-color);
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    box-sizing: border-box;
+}
+
+#footer-inicio{
+    background-color: var(--limit-background-color);
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: -150px;
+    left: 0px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    box-sizing: border-box;
+}
+

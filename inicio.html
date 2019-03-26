@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rompecabezas Virtual</title>
+    <link rel="shortcut icon" href="imagenes/icono.png" type=imagenes/logo/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One|Covered+By+Your+Grace" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+</head>
+<body onload="habilitar()">
+    <div class="contenedor">
+        <header>
+            <h1>Rompecabezas Virtual</h1>
+        </header>
+
+        <nav>
+            <a href="#"> Inicio</a>
+            <a href="ajustes.html"> Ajustes</a>
+            <a href="instrucciones.html"> Instrucciones</a>
+        </nav>
+
+        <section class="specs">
+            <p id="mensajepiezas">Cantidad de piezas:</p> 
+            <p id="mensajetiempo">Tiempo restante:</p>
+        </section>
+
+        <section class="imagen">
+            <p class="iniciar">Arma la imagen!!</p>
+            <input type="button" class="iniciar" value="iniciar" onClick="cronometro()">
+            <input type="button" class="iniciar" value="reiniciar" onClick="reiniciar()">
+            <input type="button" class="iniciar" value="cargar imagen" onClick="rompecabezas()">
+            <canvas height="600" width="525" id="imagenBase"></canvas>
+        </section>
+
+        <aside class="info">
+            <article>
+                <h2 id="info-h2">Sabías que...?</h2> 
+                <p>Desde el momento previo en que realizamos un rompecabezas hasta el momento en que encontramos la solución, 
+                atravesamos por diversos estados de ánimo que van desde la motivación pasando por la frustración, 
+                el enojo y el entusiasmo, hasta la alegría.</p>
+            </article>
+        </aside>
+    
+        <footer id="footer-inicio">Creado por Gildardo García y Armando Cardenas, Marzo 2019</footer>
+    </div>
+
+    <script src="js/inicio.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Rompecabezas Virtual</title>
+    <link rel="shortcut icon" href="imagenes/icono.png" type=imagenes/logo/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Rompecabezas Virtual</h1>
+        </header>
+
+        <nav>
+            <a href="inicio.html"> Inicio</a>
+            <a href="#"> Ajustes</a>
+            <a href="instrucciones.html"> Instrucciones</a>
+        </nav>
+
+        <section>
+            <article class="tiempo">
+                <p>Define el tiempo límite:</p>
+                <input type="number" class="tiempo" id="minutos" min="0" max="4" value="1"> 
+                <p class=tiempo>:</p>
+                <input type="number" class="tiempo" id="segundos" min="00" max="59" value="30">
+            </article>
+
+            <article id="piezas">
+                <p>Define la cantidad de piezas:</p>
+                <input type="radio" id="NumPiezas" name="pieza" value="9" checked> 9<br>
+                <input type="radio" id="NumPiezas2" name="pieza" value="16"> 16<br>
+            </article>
+
+            <article class="imagen-selector">
+                <p>Elige la imagen que te gustaría armar</p>
+                <input type="image" src="imagenes/chikorita.png" width="175" height="200" onClick="chikorita()"/>
+                <input type="image" src="imagenes/totodile.png" width="175" height="200" onClick="totodile()"/>
+                <input type="image" src="imagenes/cyndaquil.jpg" width="175" height="200" onClick="cyndaquil()"/>
+            </article>
+
+            <article id="enviar-info">
+                <input type="button" value="enviar" onClick="enviarInfo()"/>
+            </article>
+        </section>
+
+        <footer>Creado por Gildardo García y Armando Cardenas, Marzo 2019</footer>
+    </div>
+    
+    <script src="js/ajustes.js"></script>
+</body>
+</html>
